@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazing P</title>
     <style>
-        table, th, td {
-          border: 1px solid black;
-        }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
 
-        table {
-            text-align: center;
-        }
+      table {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -103,73 +105,91 @@
     </dl>
     <p><button type="button" onclick="myFunction()" ;>Hi friend!</button></p>
     <table id="section-table">
-        <thead>
-            <tr>
-                <th>Table</th>
-                <tr>button</tr>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Used using the table tag.</td>
-                <td>Used using the button tag.</td>
-            </tr>
-            <tr>
-                <td>requires a thead, tbody and tfoot. Requires styling for borderlines etc.</td>
-                <td>requires to define a button type. Can add onclick feature and others.</td>
-            </tr>
-            <tr>
-                <td>table row tr to create a row. td to enter table date. all tags require opneing and closing tags.</td>
-                <td>requires opening and closing tag.</td>
-            </tr>
-        </tbody>
-    </table><br>
+      <thead>
+        <tr>
+          <th>Table</th>
+          <th>Button</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Used using the table tag.</td>
+          <td>Used using the button tag.</td>
+        </tr>
+        <tr>
+          <td>
+            requires a thead, tbody and tfoot. Requires styling for borderlines
+            etc.
+          </td>
+          <td>
+            requires to define a button type. Can add onclick feature and
+            others.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            table row tr to create a row. td to enter table date. all tags
+            require opneing and closing tags.
+          </td>
+          <td>requires opening and closing tag.</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
 
     <details>
-        <summary>Read more about a toggable block</summary>
-        <p>A toggable block requires an opening and closing details tag. Inbetween the details tags a summary opening and closing tag shows the button that can be toggled. Following other elements like p can be added to add text.</p>
-      </details><br><br>
+      <summary>Read more about a toggable block</summary>
+      <p>
+        A toggable block requires an opening and closing details tag. Inbetween
+        the details tags a summary opening and closing tag shows the button that
+        can be toggled. Following other elements like p can be added to add
+        text.
+      </p>
+    </details>
+    <br /><br />
 
-      <form>
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email"><br>
-        <label for="password">Enter your password:</label>
-        <input type="password" id="password" name="password"><br>
-        <label for="confirm-password">Confirm your password:</label>
-        <input type="password" id="password" name="confirm-password"><br>
-        <p>Please select your Title:</p>
-        <input type="radio" id="developer" name="job_title" value="developer">
-        <label for="developer">Developer</label><br>
-        <input type="radio" id="emplyoer" name="job_title" value="employer">
-        <label for="employer">Employer</label><br>
-        <p>What are you interested in:</p>
-        <input type="checkbox" id="interest1" name="interest1" value="ReactJS">
-        <label for="interest1"> ReactJS</label><br>
-        <input type="checkbox" id="interest2" name="interest2" value="NodeJS">
-        <label for="interest2"> NodeJS</label><br>
-        <input type="checkbox" id="interest3" name="interest3" value="Webdesign">
-        <label for="interest3"> Web design</label><br>
-        <label for="cars">Choose your city:</label>
-        <select id="cars">
-            <option value="hanoi">Hanoi</option>
-            <option value="hcmc">HCMC</option>
-            <option value="danang">Da Nang</option>
-        </select><br>
-        <label for="bio">Tell us something about yourself:</label>
-        <input type="text">
+    <form>
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" /><br />
+      <label for="password">Enter your password:</label>
+      <input type="password" id="password" name="password" /><br />
+      <label for="confirm-password">Confirm your password:</label>
+      <input type="password" id="password" name="confirm-password" /><br />
+      <p>Please select your Title:</p>
+      <input type="radio" id="developer" name="job_title" value="developer" />
+      <label for="developer">Developer</label><br />
+      <input type="radio" id="emplyoer" name="job_title" value="employer" />
+      <label for="employer">Employer</label><br />
+      <p>What are you interested in:</p>
+      <input type="checkbox" id="interest1" name="interest1" value="ReactJS" />
+      <label for="interest1"> ReactJS</label><br />
+      <input type="checkbox" id="interest2" name="interest2" value="NodeJS" />
+      <label for="interest2"> NodeJS</label><br />
+      <input
+        type="checkbox"
+        id="interest3"
+        name="interest3"
+        value="Webdesign"
+      />
+      <label for="interest3"> Web design</label><br />
+      <label for="cars">Choose your city:</label>
+      <select id="cars">
+        <option value="hanoi">Hanoi</option>
+        <option value="hcmc">HCMC</option>
+        <option value="danang">Da Nang</option></select
+      ><br />
+      <label for="bio">Tell us something about yourself:</label>
+      <input type="text" />
+    </form>
 
-      </form>
-    
-    <br><br>
-  
+    <br /><br />
+
     <nav>
-        <a href="#title-section">Back to Title</a>
-        <a href="#article">Article</a>
-        <a href="#section-list">Lists</a>
-        <a href="#section-table">Table</a>
+      <a href="#title-section">Back to Title</a>
+      <a href="#article">Article</a>
+      <a href="#section-list">Lists</a>
+      <a href="#section-table">Table</a>
     </nav>
-
-
 
     <script>
       function myFunction() {
@@ -177,5 +197,4 @@
       }
     </script>
   </body>
-
 </html>
