@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing P</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+
+        table {
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="title-section">Tuesday HTML & CSS</h1>
+    <h3>In this course we will learn:</h3>
+    <p>HTML & CSS</p>
+    <!-- <p>Python</p> -->
+    <p>Javascript</p>
+    <p><a href="https://www.coderschool.vn/en/">Visit CoderSchool!</a></p>
+    <p>
+      <a href="https://www.coderschool.vn" target="_blank"
+        >Visit CoderSchool!</a
+      >
+    </p>
+
+    <article id="article">
+      <h2>Yesterdays Class</h2>
+      <p>We learned about Github, Gitbash, CMD and the Internet.</p>
+    </article>
+
+    <p><audio src="min.mp3" controls></audio></p>
+
+    <video width="320" height="240" controls>
+      <source src="lyly.mp4" type="video/mp4" />
+    </video>
+
+    <p>
+      <img
+        src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
+        alt="Poznan"
+        width="250"
+        height="400"
+      />
+    </p>
+
+    <p>
+      <strong
+        >You can write bold using the strong tag! You need an opening and
+        closing tag in order to use strong!</strong
+      >
+    </p>
+    <p>
+      <u
+        >You can underline text using the u tag! You need an opening and closing
+        tag in order to use u!</u
+      >
+    </p>
+    <p>
+      <s
+        >Strike out using the s tag! Again opening and closing tag is
+        required!</s
+      >
+    </p>
+    <br />
+    <p>You can use br for a line break! This tag is self-closing.</p>
+    <br /><br /><br />
+    <p>
+      You can chain more br tags in order to increase the amount of line breaks!
+    </p>
+    <hr />
+    <p>
+      You can create an horiszontal line using the hr tag. This is also an
+      self-closing tag.
+    </p>
+    <ul id="section-list">
+      <h4>Unordered list</h4>
+      <li>an unordered list starts with an ul tag</li>
+      <li>
+        every list item is added with an li tag. This needs an opening and
+        closing tag
+      </li>
+      <li>the unordered list ends with an closing ul tag</li>
+    </ul>
+    <ol>
+      <h4>Ordered list</h4>
+      <li>an ordered list follows the same pattern as the unordered list</li>
+      <li>it starts and ends with an ol tag</li>
+      <li>and uses li tags to insert content into the list</li>
+    </ol>
+    <dl>
+      <dt>Definition list</dt>
+      <dd>starts and ends with an dl tag</dd>
+      <dt>Contents</dt>
+      <dd>
+        The heading is added using dt and the description paragraph is added
+        using dd. Both tags have to be opened and closed.
+      </dd>
+    </dl>
+    <p><button type="button" onclick="myFunction()" ;>Hi friend!</button></p>
+    <table id="section-table">
+        <thead>
+            <tr>
+                <th>Table</th>
+                <tr>button</tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Used using the table tag.</td>
+                <td>Used using the button tag.</td>
+            </tr>
+            <tr>
+                <td>requires a thead, tbody and tfoot. Requires styling for borderlines etc.</td>
+                <td>requires to define a button type. Can add onclick feature and others.</td>
+            </tr>
+            <tr>
+                <td>table row tr to create a row. td to enter table date. all tags require opneing and closing tags.</td>
+                <td>requires opening and closing tag.</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <details>
+        <summary>Read more about a toggable block</summary>
+        <p>A toggable block requires an opening and closing details tag. Inbetween the details tags a summary opening and closing tag shows the button that can be toggled. Following other elements like p can be added to add text.</p>
+      </details><br><br>
+
+      <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="password"><br>
+        <label for="confirm-password">Confirm your password:</label>
+        <input type="password" id="password" name="confirm-password"><br>
+        <p>Please select your Title:</p>
+        <input type="radio" id="developer" name="job_title" value="developer">
+        <label for="developer">Developer</label><br>
+        <input type="radio" id="emplyoer" name="job_title" value="employer">
+        <label for="employer">Employer</label><br>
+        <p>What are you interested in:</p>
+        <input type="checkbox" id="interest1" name="interest1" value="ReactJS">
+        <label for="interest1"> ReactJS</label><br>
+        <input type="checkbox" id="interest2" name="interest2" value="NodeJS">
+        <label for="interest2"> NodeJS</label><br>
+        <input type="checkbox" id="interest3" name="interest3" value="Webdesign">
+        <label for="interest3"> Web design</label><br>
+        <label for="cars">Choose your city:</label>
+        <select id="cars">
+            <option value="hanoi">Hanoi</option>
+            <option value="hcmc">HCMC</option>
+            <option value="danang">Da Nang</option>
+        </select><br>
+        <label for="bio">Tell us something about yourself:</label>
+        <input type="text">
+
+      </form>
+    
+    <br><br>
+  
+    <nav>
+        <a href="#title-section">Back to Title</a>
+        <a href="#article">Article</a>
+        <a href="#section-list">Lists</a>
+        <a href="#section-table">Table</a>
+    </nav>
+
+
+
+    <script>
+      function myFunction() {
+        alert("Hi friend!");
+      }
+    </script>
+  </body>
+
+</html>
